@@ -1,0 +1,24 @@
+; Rising Kick — explosive launcher from Low stance, exits to Neutral. Unabsorbable.
+[gd_resource type="Resource" script_class="MoveCard" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://resources/moves/MoveCard.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/moves/stances/stance_low.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/moves/stances/stance_neutral.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+move_name = "Rising Kick"
+required_stance = ExtResource("2")
+exit_stance = ExtResource("3")
+startup_frames = 14
+active_frames = 6
+recovery_frames = 28
+chain_window_frame = 22
+damage = 22
+hitstun_frames = 20
+knockback_vector = Vector3(0, 0.5, -1.8)
+animation_name = "attack_rising_kick"
+hitbox_offset = Vector3(0, 0.9, -0.65)
+hitbox_radius = 0.35
+is_unabsorbable = true
+is_unparriable = false

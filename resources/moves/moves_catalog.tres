@@ -1,0 +1,13 @@
+; Master catalog of all available MoveCards — used by DeckBuilder to populate the catalog panel.
+[gd_resource type="Resource" script_class="ComboDeck" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://resources/decks/ComboDeck.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/moves/move_jab.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/moves/move_cross.tres" id="3"]
+[ext_resource type="Resource" path="res://resources/moves/move_sweep.tres" id="4"]
+[ext_resource type="Resource" path="res://resources/moves/move_rising_kick.tres" id="5"]
+
+[resource]
+script = ExtResource("1")
+deck_name = "Catalog"
+moves = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]

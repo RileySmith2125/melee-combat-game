@@ -1,0 +1,24 @@
+; Sweep — low kick from Neutral, exits to Low stance. Unparriable.
+[gd_resource type="Resource" script_class="MoveCard" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://resources/moves/MoveCard.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/moves/stances/stance_neutral.tres" id="2"]
+[ext_resource type="Resource" path="res://resources/moves/stances/stance_low.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+move_name = "Sweep"
+required_stance = ExtResource("2")
+exit_stance = ExtResource("3")
+startup_frames = 12
+active_frames = 5
+recovery_frames = 22
+chain_window_frame = 18
+damage = 12
+hitstun_frames = 18
+knockback_vector = Vector3(0, -0.1, -1.0)
+animation_name = "attack_sweep"
+hitbox_offset = Vector3(0, 0.3, -0.7)
+hitbox_radius = 0.35
+is_unabsorbable = false
+is_unparriable = true

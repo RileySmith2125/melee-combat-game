@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Stance" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/moves/stances/Stance.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+stance_id = &"low"
+stance_name = "Low"
+idle_animation = "idle_low"
+walk_animation = "walk_low"

@@ -1,0 +1,13 @@
+# Godot 4 — editor and import artifacts
+.godot/
+*.uid
+
+# Exported binaries
+/export/
+*.exe
+*.x86_64
+*.app
+
+# OS
+.DS_Store
+Thumbs.db

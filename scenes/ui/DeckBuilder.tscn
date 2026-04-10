@@ -1,0 +1,68 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/DeckBuilder.gd" id="1"]
+
+[node name="DeckBuilder" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+visible = false
+script = ExtResource("1")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.05, 0.05, 0.05, 0.92)
+mouse_filter = 2
+
+[node name="HSplit" type="HSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -60.0
+split_offset = 300
+
+[node name="DeckPanel" type="VBoxContainer" parent="HSplit"]
+[node name="DeckTitle" type="Label" parent="HSplit/DeckPanel"]
+text = "Your Deck"
+
+[node name="SlotsContainer" type="VBoxContainer" parent="HSplit/DeckPanel"]
+size_flags_vertical = 3
+
+[node name="CatalogPanel" type="VBoxContainer" parent="HSplit"]
+[node name="CatalogTitle" type="Label" parent="HSplit/CatalogPanel"]
+text = "Move Catalog"
+
+[node name="CatalogScroll" type="ScrollContainer" parent="HSplit/CatalogPanel"]
+size_flags_vertical = 3
+[node name="CatalogContainer" type="VBoxContainer" parent="HSplit/CatalogPanel/CatalogScroll"]
+size_flags_horizontal = 3
+
+[node name="WarningLabel" type="Label" parent="."]
+layout_mode = 1
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -56.0
+offset_bottom = -36.0
+modulate = Color(1, 1, 0, 1)
+
+[node name="SaveButton" type="Button" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -32.0
+offset_right = 80.0
+offset_bottom = -4.0
+text = "Save & Fight"

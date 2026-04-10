@@ -1,0 +1,16 @@
+# Normalize line endings: store LF in the repo, check out as-is on all platforms.
+* text=auto eol=lf
+
+# Godot text formats — always LF
+*.gd    text eol=lf
+*.tscn  text eol=lf
+*.tres  text eol=lf
+*.godot text eol=lf
+
+# Binaries — no line-ending conversion
+*.png   binary
+*.jpg   binary
+*.ogg   binary
+*.wav   binary
+*.glb   binary
+*.gltf  binary
